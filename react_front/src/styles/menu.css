@@ -1,0 +1,126 @@
+/* ===== MENU ===== */
+.menu {
+  background: #2c3034;
+  width: 100%;
+}
+
+.menu-header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu .title {
+  color: #c2703d;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.menu .sub-title {
+  color: #fff;
+  font-size: 28px;
+}
+
+/* Style for the "Menu Grid" container */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Container for the whole item */
+.menu-container > .container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  height: -webkit-fill-available;
+  background: #fff;
+}
+
+/* Style for the image canvas */
+#canvas {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background: #e1e1e1;
+}
+
+.product-name {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style for the description section */
+.product-description {
+  margin-bottom: 10px;
+}
+
+/* Style for the price and order buttons */
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 8px;
+}
+
+.product-info .order-button {
+  width:50%;
+}
+
+
+.product-cost {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.order-button {
+  padding: 10px 20px;
+  background-color: #c2703d!important;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.order-button:hover {
+  background-color: #a0583c!important;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.food-img {
+  width:70%;
+  height:200px;
+}
+
+.canvas {
+  display:flex;
+  justify-content: center;
+}

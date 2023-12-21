@@ -1,0 +1,159 @@
+/* In this CSS file are Reusable Styles meaning instead of making alot of duplicates, 
+in here this will hold all the similar styles of Landing Page*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f1ec;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C06B3E;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C2703D;
+  border-radius: 1rem;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Reusuable CSS */
+.section{
+  padding: 7rem 2rem;
+}
+
+.container{
+  max-width: 1030px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+}
+
+.button{
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 1rem 1.4rem;
+  border-radius: 3rem;
+  background-color: #C87E4F;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #C2703D;
+}
+
+.section-subtitle,
+.content-subtitle{
+  color: #C87E4F;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section-title,
+.content-title{
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.section-description,
+.content-description{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-description{
+  padding: 0 16rem;
+}
+
+
+/* Scroll Up */
+.scrollUp-btn {
+  position: fixed;
+  bottom: -30%;
+  right: 3rem;
+  height: 3rem;
+  width: 3rem;
+  font-size: 2rem;
+  border-radius: 4px;
+  color: #C87E4F;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  z-index: 10;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.scrollUpBtn-active {
+  bottom: 3rem;
+}
+
+.scrollUp-icon {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.scrollUp-btn:hover .scrollUp-icon {
+  opacity: 1;
+}
+

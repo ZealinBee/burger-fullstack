@@ -1,0 +1,84 @@
+/* ===== MENU CATALOGUE ===== */
+.menu-container {
+    background: var(--body-color);
+    height: 100vh;
+    width: 100%;
+    transition: var(--tran-05);
+    padding: 12px;
+    overflow-y: auto;
+}
+
+/* Style for the different "Categories" container */
+.category-container {
+    margin-bottom: 100px;
+}
+
+/* Style for the different "Products" container */
+.product-container {
+    display: grid;
+    align-content: start;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+  
+/* Container for the whole item */
+.product-container > .container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    gap: 15px;
+    height: fit-content;
+    background: #fff;
+}
+
+/* Style for the image canvas */
+#canvas {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    background: #e1e1e1;
+}
+  
+/* Style for the food name and cost section */
+.food-details {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.food-name {
+    font-weight: bold;
+}
+  
+/* Style for the Total Orders and Revenue section */
+.product-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+  
+/* Style for the see order button */
+.orderBtn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+  
+.order-button {
+    padding: 10px 20px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+  
+.order-button:hover {
+    background-color: var(--primary-color-hover);
+}

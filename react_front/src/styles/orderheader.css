@@ -1,0 +1,196 @@
+
+.order-header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    transition: all 0.5s ease;
+}
+
+.order-header .name{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary-color-hover);
+}
+
+.order-header .search-box{
+    position: relative;
+    height: 50px;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.order-header .search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background: var(--white);
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.order-header .search-box .bx-search{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: var(--primary-color);
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--white);
+    font-size: 22px;
+    transition: all 0.4 ease;
+}
+
+.cart-profile {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-header .addToCart .fa-cart-shopping {
+    height: 40px;
+    width: 40px;
+    background: #c2703d;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 22px;
+    transition: all 0.4 ease;
+}
+
+.order-header .addToCart .fa-cart-shopping:hover {
+    background: #F2F2F2;
+    color: var(--primary-color-hover);
+    cursor: pointer;
+}
+
+.select-menu{
+    min-width: 190px;
+}
+
+.select-menu .select-btn{
+    display: flex;
+    height: 50px;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-around;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.select-btn img{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+
+.select-menu .options{
+    position: absolute;
+    min-width: 190px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.select-menu.active .options{
+    display: block;
+}
+
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: var(--white);
+}
+
+.options .option:hover{
+    background: #F2F2F2;
+}
+
+.option .option-text{
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+
+
+
+
+/* Carousel Menu Categories */
+.carousel-menu {
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    background-color: var(--white);
+    width: 80%;
+    margin: auto;
+}
+
+.menuLinks-container {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    height: 45px;
+    margin: 10px;
+    background-color: var(--white);
+}
+
+.menu-item {
+    flex: 0 0 auto;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.menu-item:hover {
+    border-bottom: 2px solid var(--primary-color-hover);
+}
+
+.nav-button {
+    color: var(--text-color);
+    background-color: var(--white);
+    padding: 10px;
+    height: auto;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

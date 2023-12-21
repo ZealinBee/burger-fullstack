@@ -1,0 +1,125 @@
+/* ===== ABOUT ===== */
+.about .content-subtitle,
+.about .content-title,
+.about .content-description{
+  text-align: left;
+}
+
+.about-content{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 7rem;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.about-imageContent{
+  position: relative;
+  max-width: 400px;
+  height: 450px;
+  border: 6px solid #2C3034;
+}
+
+.aboutImg-textBox{
+  position: absolute;
+  bottom: 2rem;
+  right: -5rem;
+  padding: 2rem;
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+  border: 6px solid #2C3034;
+  background-color: #fff;
+}
+
+.aboutImg-textBox .content-description{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.heart-icon{
+  position: absolute;
+  left: -1.5rem;
+  padding: 10px;
+  top: 50%;
+  color: #fff;
+  background-color: #2C3034;
+  transform: translateY(-50%);
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.about-details{
+  display: grid;
+  row-gap: 4rem;
+}
+
+.about-lists{
+  column-gap: 1rem;
+  align-items: baseline;
+}
+
+.about-list{
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.about-list:nth-child(1){
+  color: #C87E4F;
+}
+
+.about-list.dot{
+  font-size: 2.5rem;
+}
+
+.about-buttons{
+  column-gap: 2rem;
+}
+
+.about-link .link-text,
+.about-arrowIcon{
+  color: #333;
+  text-transform: uppercase;
+}
+
+.about-arrowIcon{
+  transition: 0.3s;
+}
+
+.about-link:hover .about-arrowIcon{
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 1080px) {
+  .about-imageContent {
+    height: 400px;
+  }
+  .aboutImg-textBox {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-content{
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    justify-items: center;
+  }
+  .about .content-subtitle,
+  .about .content-title,
+  .about .content-description{
+    text-align: center;
+  }
+  .about-details {
+    justify-items: center;
+  }
+  .about-lists{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutImg-textBox{
+    right: -2rem
+  }
+}
